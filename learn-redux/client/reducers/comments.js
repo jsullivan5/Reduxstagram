@@ -15,6 +15,7 @@ function postComments(state = [], action) {
   }
   return state;
 }
+
 function comments(state = [], action) {
   if (typeof action.postId !== 'undefined') {
     return {
@@ -25,4 +26,4 @@ function comments(state = [], action) {
   return state
 }
 
-export default comments
+export default comments;

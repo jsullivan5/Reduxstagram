@@ -10,8 +10,9 @@ const Comments = React.createClass({
           <button className="remove-comment" onClick={this.props.removeComment.bind(null, this.props.params.postId, i)}>&times;</button>
         </p>
       </div>
-    )
+    );
   },
+
   handleSubmit(e) {
     e.preventDefault();
     const { postId } = this.props.params;
@@ -21,6 +22,7 @@ const Comments = React.createClass({
     this.props.addComment(postId, author, comment);
     this.refs.commentForm.reset();
   },
+
   render () {
     return (
       <div className="comments">
@@ -31,8 +33,8 @@ const Comments = React.createClass({
           <input type="submit" hidden />
         </form>
       </div>
-    )
+    );
   }
-})
+});
 
-export default Comments
+export default Comments;

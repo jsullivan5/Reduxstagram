@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from './Photo'
+import Photo from './Photo';
 
 const PhotoGrid = React.createClass({
   render() {
@@ -11,4 +11,4 @@ const PhotoGrid = React.createClass({
   }
 });
 
-export default PhotoGrid
+export default PhotoGrid;

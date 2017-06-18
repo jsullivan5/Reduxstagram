@@ -31,8 +31,8 @@ const Photo = React.createClass({
           </Link>
         </figcaption>
       </figure>
-    )
+    );
   }
-})
+});
 
 export default Photo;

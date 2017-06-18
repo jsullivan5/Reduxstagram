@@ -9,7 +9,6 @@ import comments from './data/comments';
 import posts from './data/posts';
 
 //Create an object for the default data
-
 const defaultState = {
   posts,
   comments
@@ -28,6 +27,6 @@ if(module.hot) {
     const nextRootReducer = require('./reducers/index').default;
     store.replaceReducer(nextRootReducer);
   })
-}
+};
 
-export default store
+export default store;
